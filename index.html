@@ -1,1 +1,265 @@
-Hello World
+<!DOCTYPE html>
+<head>
+  <title>Resume - Warit Poompakdee</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 40px auto;
+      background-color: white;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    /* --- Sidebar --- */
+    .sidebar {
+      width: 40%;
+      background-color: #1e1f2b;
+      color: white;
+      padding: 30px 25px;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto 20px auto;
+      
+    }
+
+    .sidebar img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      margin-bottom: 20px;
+    }
+
+    .sidebar h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .sidebar h3 {
+      margin-top: 30px;
+      font-size: 16px;
+      color: #ff5f5f;
+      border-bottom: 1px solid #ffffff33;
+      padding-bottom: 6px;
+      width: 100%;
+    }
+    .sidebar a{
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: left;
+      color: #ddd;
+    }
+    .sidebar p, .sidebar li {
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .sidebar ul {
+      list-style: disc;
+      padding-left: 20px;
+      width: 100%;
+    }
+
+    .sidebar ul li {
+      margin: 8px 0;
+    }
+
+    /* --- Main Content --- */
+    .content {
+      width: 67%;
+      padding: 40px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #1a1a1a;
+    }
+
+    .highlight {
+      color: #e63646;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 6px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    article {
+      margin-bottom: 20px;
+    }
+
+    article h3 {
+      margin: 0;
+      color: #1e1e1e;
+      font-size: 16px;
+    }
+
+    article p {
+      margin: 6px 0 0;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .contact-icon {
+      margin-right: 6px;
+    }
+
+    .center-header {
+  text-align: center;
+}
+
+.center-header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.spinner {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.typing {
+  animation: typing 1s steps(20);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: none;
+}
+
+@keyframes rainbow {
+  0%   { color: red; }
+  20%  { color: orange; }
+  40%  { color: yellow; }
+  60%  { color: green; }
+  80%  { color: blue; }
+  100% { color: violet; }
+}
+.rainbow-text {
+  animation: rainbow 3s linear infinite;
+  
+  
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container  ">
+    <!-- Sidebar --> <!-- Sidebar -->
+    <aside class="sidebar rainbow-text">
+      <div class="center-header ">
+      <img src="https://i.ibb.co/Z7hqXnP/image.png" alt="Profile Photo" class="spinner "/>
+      <h2 class="typing">About Me</h2>
+      </div>
+      <p >
+        I'm a Computer Engineering student at Kasetsart University. Experienced in web & embedded dev using C++, Java, Python, HTML, and React.
+      </p>
+
+      <h3 class="animate-bounce ">📞 Contact</h3>
+
+      <a href="https://www.facebook.com/w.ri.ththi.phum.phakdi" class=" rainbow-text" >FB : วริทธิ์ พุ่มภักดี</a>
+      <a href="https://www.instagram.com/yuikungyoungyuri/" class="rainbow-text">IG : Yuikungyounguri</a>
+      <a href="https://www.youtube.com/@yurikub807/videos" class="rainbow-text">YT : Yuri kub</a>
+
+      <h3 class="animate-bounce">💻 Skills</h3>
+      <ul>
+        <li>no dead line no work</li>
+        <li>one night miracle</li>
+        
+      </ul>
+
+      <h3 class="animate-bounce">🌐 Language</h3>
+      <ul>
+        <li>Thai</li>
+        <li>Java, Python, c++</li>
+        <li>hindi</li>
+      </ul>
+      <h3 class="animate-bounce">📄 Hobbies</h3>
+      <ul>
+        <li>pray</li>
+        <li>study</li>
+        <li>Read a book</li>
+      </ul>
+      </aside>
+
+    <!-- Main Content -->
+    <main class="content ">
+      <h1 class="typing">WARIT POOMPAKDEE</h1>
+      <p class="text-shadow-lg/30">Engineering - Computer</p>
+
+      <section class="typing">
+        <h2>Education</h2>
+        <p><strong>(2019–2022)</strong><br>Assumption College<br>GPA: 2.7</p>
+        <p><strong>(2022–Now)</strong><br>Kasetsart University<br>Bachelor of Engineering (Expected: 2030)<br>GPA: 2.37</p>
+      </section>
+
+      <section class="typing">
+        <h2>Project & Experience</h2>
+
+        <article>
+          <h3>(Feb 2022) Fundamental Programming 2</h3>
+          <p><strong>Yuri Type:</strong> Java typing practice app using OOP</p>
+        </article>
+
+        <article>
+          <h3>(Oct 2023) Electronic for Computer Engineer</h3>
+          <p>Made circuits using Proteus & PCB design tools</p>
+        </article>
+
+        <article>
+          <h3>(Feb 2024) App Development</h3>
+          <p><strong>Mustoce Clean Food:</strong> React + HTML + database meal planner</p>
+        </article>
+
+        <article>
+          <h3>(Oct 2024) Embedded System</h3>
+          <p><strong>Detecting Intruders:</strong> ESP32 + LINE IoT alert system</p>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
